@@ -20,7 +20,7 @@ uint8_t firebaseFingerprint[20] = {0x4b, 0xd6, 0x90, 0x9f, 0x6d, 0x0e, 0x83, 0x7
 uint8_t hashifyFingerprint[20] = {0x75, 0xb3, 0x0a, 0x0c, 0xc0, 0xc2, 0x1e, 0x38, 0x26, 0x6f, 0x9e, 0x65, 0x56, 0xb7, 0xa3, 0x7f, 0xb4, 0x8b, 0x1f, 0x74};
 uint8_t fingerprints[2][20] = {{0x4b, 0xd6, 0x90, 0x9f, 0x6d, 0x0e, 0x83, 0x7f, 0x8d, 0xf2, 0xfc, 0xa7, 0x2d, 0x01, 0x7d, 0xfb, 0x7c, 0xf2, 0x98, 0xb6}, {0x75, 0xb3, 0x0a, 0x0c, 0xc0, 0xc2, 0x1e, 0x38, 0x26, 0x6f, 0x9e, 0x65, 0x56, 0xb7, 0xa3, 0x7f, 0xb4, 0x8b, 0x1f, 0x74}}; //firebase fingerprint, hashify fingerprint
 
-String firebaseDemoUrl = "https://firestore.googleapis.com/v1beta1/projects/foodlocker-5341f/databases/(default)/documents/users/cookerturtle?key=AIzaSyDu0llzElloDrp0Zdev3gJ4rzXIKtsQg3A";
+String firebaseDemoUrl = "https://firestore.googleapis.com/v1beta1/projects/foodlocker-5341f/databases/(default)/documents/users/cookerturtle?key=KEY";
 
 ESP8266WiFiMulti WiFiMulti;
 
@@ -84,7 +84,7 @@ void postRequest(String path, String field, String valueType, String value, uint
 
     HTTPClient https;
 
-    String url = "https://firestore.googleapis.com/v1beta1/projects/foodlocker-5341f/databases/(default)/documents:commit?key=AIzaSyDu0llzElloDrp0Zdev3gJ4rzXIKtsQg3A";
+    String url = "https://firestore.googleapis.com/v1beta1/projects/foodlocker-5341f/databases/(default)/documents:commit?key=KEY";
     
     if (https.begin(*client, url)) {  // HTTPS
 
