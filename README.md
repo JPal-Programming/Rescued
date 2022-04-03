@@ -38,3 +38,7 @@ Yeah, that was pretty straightforward as you can see from my coherent and compos
 
 As of right now, the app is limited to android-enabled devices. However, depending on the statistic, iOS controls anywhere from 10-30% of the global market share, including a ~57% market share in the US. Given more time, the next course of action will be to expand into iOS, making my app much more accessible. In addition, we would like to make a sturdier version of the hardware. Due to time and budget constraints, the hardware we used was nowhere near the strength and reliability needed for a real-life application.
 
+## Notice - IMPORTANT
+
+The API keys have been removed for security. If you would like to request the API keys for demo purposes, [please reach out to me by email.](mailto:bbobjoeyguy@gmail.com)
+
