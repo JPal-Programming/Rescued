@@ -1,9 +1,6 @@
-# Rescued
-An innovative take on an age-old problem.
-
 ## Inspiration
 
-Rescued is an innovative solution to the food supply crisis caused by the pandemic. According to the USDA's latest “Household Food Insecurity in the United States” report, more than 38 million people in the United States experienced hunger in 2020. In addition, the USDA estimates that food waste is estimated at between 30-40 percent of the total food supply. My app helps bridge this gap between businesses that have excess food and people in need by giving stores the ability to donate their unsold food to the people who need it. 
+Rescued is an innovative solution to the food supply crisis caused by the pandemic. According to the USDA's latest “Household Food Insecurity in the United States” report, more than 38 million people in the United States experienced hunger in 2020. In addition, the USDA estimates that food waste is between 30-40 percent of the total food supply. My app helps bridge this gap between businesses that have excess food and people in need by giving stores the ability to donate their unsold food to the people who need it. 
 
 During the pandemic, many families struggled to afford food due to rising local unemployment rates. After speaking with a local food shelter and talking to members of my community, I noticed that a startling number of people were experiencing the effects of food insecurity. At the same time, many small businesses saw a decline in customers and therefore an increase in food waste. Upon identifying this problem, I felt the need to create an app that would solve both food insecurity and food waste. 
 
@@ -11,7 +8,7 @@ During the pandemic, many families struggled to afford food due to rising local 
 
 The first part of the project is a prototype food locker that provides a secure and refrigerated location for food storage starting at its Sell-By date and ending when it is picked up by someone who needs it. The prototype I made consists of electrical components attached to a chest refrigerator. The ultimate purpose of the electrical components is to operate a solenoid lock that can be used to bolt the lid shut. See [How I built it](#how-i-built-it) for more information about the electronics.
 
-The mobile application is the main user interface, with usage of the app required to access the Food Locker. Specifically, creating an account with the mobile app gives users the credentials required to unlock the locker. The main page of the app shows all the Food Lockers near the user. The app is able to determine this by taking the user's location and displaying the Food Lockers within a 50-mile radius. By clicking on a Food Locker (delineated by a custom map location pin), users can see what food is available at each locker, the locker's distance, and request directions through the integrated directions information. The secondary page gives credentials to unlock the Food Locker, including a numeric code as well as NFC Contactless verification.
+The mobile application is the main user interface, with usage of the app required to access Food Lockers. Specifically, creating an account with the mobile app gives users the credentials required to unlock the locker. The main page of the app shows all the Food Lockers near the user. The app is able to determine this by taking the user's location and displaying the Food Lockers within a 50-mile radius. By clicking on a Food Locker (delineated by a custom map location pin), users can see what food is available at each locker, the locker's distance, and request directions through the integrated directions information. The secondary page gives credentials to unlock the Food Locker, including a numeric code as well as NFC Contactless verification.
 
 ## How I built it
 
