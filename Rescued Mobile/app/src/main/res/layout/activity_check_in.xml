@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context=".CheckInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/checkin_container"
+        android:layout_above="@+id/bnv">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Enter this code to check in at any participating Rescued locations."
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/code"
+            style="@style/PinWidget.PinView"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="3241"
+            android:itemBackground="@color/white"
+            android:textColor="@color/green"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:cursorWidth="2dp"
+            app:itemCount="4"
+            app:itemHeight="70dp"
+            app:itemRadius="5dp"
+            app:itemSpacing="15dp"
+            app:itemWidth="70dp"
+            app:lineColor="@color/green"
+            app:lineWidth="5dp"
+            app:viewType="rectangle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your code will expire in"
+                android:textColor="#939393"
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/view_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:progressDrawable="@drawable/circular_progress_bar" />
+
+
+                <TextView
+                    android:id="@+id/tv_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="59"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/nfc_container">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/directions_container"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="NFC and Contactless Check-in"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/baseline_arrow_forward_ios_black_24dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nfc_fragment_container"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:translationZ="90dp">
+
+        <include
+            layout="@layout/layout_nfc_popup"
+            android:id="@+id/nfc_fragment"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bnv"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/bnv_tab_color"
+        app:itemTextColor="@drawable/bnv_tab_color"
+        app:labelVisibilityMode="labeled"
+        android:layout_marginBottom="-40dp"/>
+
+</RelativeLayout>

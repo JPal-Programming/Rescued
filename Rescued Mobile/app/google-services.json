@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "529472329761",
+    "firebase_url": "https://foodlocker-5341f-default-rtdb.firebaseio.com",
+    "project_id": "foodlocker-5341f",
+    "storage_bucket": "foodlocker-5341f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529472329761:android:e68490f240fe671902eb60",
+        "android_client_info": {
+          "package_name": "com.example.rescuedversion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529472329761-c647m0gvahvc22k0mitvi11gv6j5ubqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6O30TLeysSmGAw4ysmWEemiIOd0IVTcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529472329761-c647m0gvahvc22k0mitvi11gv6j5ubqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
